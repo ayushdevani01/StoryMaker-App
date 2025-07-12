@@ -1,0 +1,81 @@
+/* src/components/story/StoryCard.css */
+
+.story-card {
+  /* Fixed dimensions for the card to match PDF (3in width, 4in height) */
+  /* 1 inch = 96 pixels (common browser DPI) */
+  width: 3in; /* 3in * 96px/in */
+  height: 4in; /* 4in * 96px/in */
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+
+.story-card-image-container {
+  width: 100%;
+  height: 3in; /* 3in * 96px/in */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Placeholder background */
+}
+
+.story-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+.story-card-text-container {
+  width: 100%;
+  height: 1in; 
+  padding: 5px; 
+  display: flex;
+  align-items: center; 
+  background-color: #f8f8f8;
+  font-size: 2rem;
+  font-family: "Caveat", cursive;
+}
+
+.story-card-paragraph {
+  margin: 0; 
+  padding-top: 4.8px; 
+  font-size: 0.8rem; 
+  line-height: 1.1;
+  color: #333;
+  text-align: justify;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.story-card-loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.story-card-error {
+  text-align: center;
+  color: #dc2626;
+  font-size: 14.4px;
+}
+
+.story-card-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-size: 19.2px; 
+}

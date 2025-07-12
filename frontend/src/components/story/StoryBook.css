@@ -1,0 +1,11 @@
+/* src/components/story/storybook.css */
+
+.card-viewport {
+  overflow-x: auto;
+  width: 100%;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #667eea #e0e0e0;
+}
